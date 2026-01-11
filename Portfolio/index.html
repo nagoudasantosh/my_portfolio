@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh | Full Stack Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span>S</span>antosh<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 hero-content">
+                    <div class="hero-badge fade-in">Java Full Stack Developer</div>
+                    <h1 class="fade-in">Hi, I'm <span>Santosh</span></h1>
+                    <p class="fade-in">Software Engineer specializing in building secure, scalable applications with
+                        Java, Spring Boot, and React. Passionate about solving complex problems and creating efficient
+                        solutions.</p>
+                    <div class="mt-4">
+
+                        <a href="#projects" class="btn btn-outline-light me-3 fade-in">
+                            View Projects
+                        </a>
+
+                        <!-- DOWNLOAD RESUME -->
+                        <a href="#" onclick="forceDownload()" class="btn btn-outline-light">
+                            <i class="fas fa-download me-2"></i>
+                            Download Resume
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12 d-none d-lg-block text-center fade-in">
+                    <div class="hero-illustration">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row about-content">
+                <div class="col-lg-12 about-text">
+                    <h3>Software Engineer with 2+ years of experience</h3>
+                    <p>Software Engineer with 2+ years of hands-on experience delivering mission-critical applications
+                        in
+                        the Banking and Government domains. Expert in secure data handling and identity management
+                        using Spring Security and JWT. Proven ability to bridge the gap between complex backend logic
+                        and
+                        intuitive ReactJS interfaces to drive system-wide efficiency. Committed to Clean Code principles
+                        and Agile methodologies to ensure the delivery of maintainable, high-performance software within
+                        collaborative team environments</p>
+
+                    <div class="mt-6">
+                        <span class="experience-badge">Java</span>
+                        <span class="experience-badge">Spring Boot</span>
+                        <span class="experience-badge">React</span>
+                        <span class="experience-badge">MySQL</span>
+                        <span class="experience-badge">JWT Security</span>
+                        <span class="experience-badge">Microservices</span>
+                    </div>
+
+                    <p class="mt-4">I have successfully delivered multiple projects involving secure authentication
+                        systems, real-time data processing, and role-based access control implementations. I'm
+                        passionate about clean code, best practices, and continuous learning.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-name">Java</div>
+                        <p>Advanced proficiency with Java 8+ features and enterprise development</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="skill-name">Spring Boot</div>
+                        <p>Building REST APIs, Microservices, and secure applications</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="skill-name">React JS</div>
+                        <p>Creating responsive UI components and state management</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-name">MySQL</div>
+                        <p>Database design, optimization, and complex query writing</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="skill-name">JWT Security</div>
+                        <p>Implementing authentication & authorization systems</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="skill-name">Docker</div>
+                        <p>Containerization and deployment of applications</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-name">Git</div>
+                        <p>Version control and collaborative development</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="skill-name">REST APIs</div>
+                        <p>Designing and Developing consuming RESTful for web services</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 93%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AWS -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="skill-name">AWS</div>
+                        <p>Cloud deployment, EC2, S3, IAM, and scalable infrastructure</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kubernetes -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="skill-name">Kubernetes</div>
+                        <p>Container orchestration, pods, services, and deployments</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microservices -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="skill-name">Microservices</div>
+                        <p>Scalable distributed systems using Spring Boot architecture</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PostgreSQL -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-name">PostgreSQL</div>
+                        <p>Relational database design, indexing, optimization, and queries</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience pt-3">
+        <div class="container">
+            <h2 class="section-title"> Experience</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+
+                    <div class="experience-card fade-in">
+                        <div class="experience-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+
+                        <div class="experience-content">
+                            <h4>Java Full Stack Developer</h4>
+                            <h6>
+                                Arinoz Technologies Private Limited, Pune
+                                |
+                                <a href="http://arinoz.com/" target="_blank">
+                                    arinoz.com
+                                </a>
+                            </h6>
+
+                            <p class="experience-meta">
+                                <i class="fas fa-calendar-alt"></i>
+                                2024 – Present
+                            </p>
+
+                            <ul class="experience-list">
+                                <li>Developing and maintaining scalable backend services using Java and Spring Boot.
+                                </li>
+                                <li>Working on microservices-based architecture for high-performance applications.</li>
+                                <li>Implementing secure authentication and authorization using Spring Security and JWT.
+                                </li>
+                                <li>Building responsive frontend components using React.js.</li>
+                                <li>Integrating databases like PostgreSQL and MySQL for reliable data management.</li>
+                                <li>Using Kafka and Redis for real-time data processing and caching.</li>
+                                <li>Deploying applications using Docker and supporting cloud-based environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-shield-alt fa-4x"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Weapon Armory Management System</h4>
+                            <p>A secure tracking and management system for weapon inventory with real-time monitoring,
+                                audit trails, and multi-level authentication.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">JWT Security</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-university fa-4x"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Government e-Management System</h4>
+                            <p>A comprehensive platform for government workflow automation with role-based access
+                                control, document management, and reporting modules.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Hibernet</span>
+                                <span class="project-tag">JWT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-lg-6">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-credit-card fa-4x"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Banking Transaction Portal</h4>
+                            <p>Secure online banking portal for transaction processing, account management, and
+                                financial reporting with real-time notifications.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Hibernet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <i class="fas fa-map-marker-alt fa-4x"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>GPS Device Tracking System</h4>
+                            <p>
+                                A real-time GPS tracking system that displays live location, speed, and movement of
+                                users.
+                                Built with Java and Spring Boot to process continuous GPS data efficiently and securely.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">Kafka</span>
+                                <span class="project-tag">Redis</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+
+            <div class="row g-4">
+
+                <!-- MCA -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="education-card fade-in">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Master of Computer Application (MCA)</h4>
+                            <h6>Visvesvaraya Technological University (VTU), Belagavi</h6>
+                            <p class="education-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Mar 2022 – Oct 2023</span>
+                            </p>
+                            <p><strong>CGPA:</strong> 7.6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BCA -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="education-card fade-in">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Bachelor of Computer Application (BCA)</h4>
+                            <h6>SJPN Trust's BCA College, Nidasosi</h6>
+                            <p class="education-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Jul 2017 – Nov 2020</span>
+                            </p>
+                            <p><strong>Percentage:</strong> 57%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PUC -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="education-card fade-in">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Pre-University Course (PUC)</h4>
+                            <h6>SDVS Sangh's PU College, Sankeshwar</h6>
+                            <p class="education-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Jun 2015 – Mar 2017</span>
+                            </p>
+                            <p><strong>Percentage:</strong> 59%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSLC -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="education-card fade-in">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>SSLC</h4>
+                            <h6>SD High School, Sankeshwar</h6>
+                            <p class="education-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Jun 2014 – Mar 2015</span>
+                            </p>
+                            <p><strong>Percentage:</strong> 72%</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="row g-4">
+
+                <!-- LEFT SIDE : CONTACT DETAILS -->
+                <!-- LEFT SIDE : CONTACT DETAILS -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-card h-100">
+
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h5>Name</h5>
+                                <p>Santosh Nagouda</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>nagoudasantosh1999@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h5>GitHub</h5>
+                                <p>
+                                    <a href="https://github.com/nagoudasantosh" target="_blank">
+                                        github.com/nagoudasantosh
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h5>LinkedIn</h5>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/santosh-nagouda-413905226" target="_blank">
+                                        linkedin.com/in/santosh-nagouda
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Belagavi, Karnataka, India</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- RIGHT SIDE : HR / CONTACT FORM -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-card h-100">
+
+                        <h4 class="mb-4 text-center">Contact me </h4>
+
+                        <form onsubmit="sendToWhatsApp(event)">
+                            <div class="mb-5">
+                                <input type="text" id="hrName" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="mb-5">
+                                <input type="email" id="hrEmail" class="form-control" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="mb-5">
+                                <input type="text" id="hrAddress" class="form-control" placeholder="Company / Address">
+                            </div>
+
+                            <div class="mb-5">
+                                <textarea id="hrMessage" class="form-control" rows="4" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fab fa-whatsapp me-2"></i>
+                                    Send via WhatsApp
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Santosh Portfolio. All rights reserved.</p>
+            <p class="mt-2" style="font-size: 0.9rem; opacity: 0.7;">Designed with
+                </i> for the developer community</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
